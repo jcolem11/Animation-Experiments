@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:SparkView.xcodeproj">
+      location = "self:/Users/owner/Projects/SparkView/Animation Playground.xcodeproj">
    </FileRef>
 </Workspace>

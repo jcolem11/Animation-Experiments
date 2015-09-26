@@ -21,7 +21,7 @@
 		EB1934541B993B3500FAD126 /* UIColor-Hex-Swift-master */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "UIColor-Hex-Swift-master"; path = "../../../Downloads/UIColor-Hex-Swift-master"; sourceTree = "<group>"; };
 		EB1934561B993B9800FAD126 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = "../../../Downloads/UIColor-Hex-Swift-master/UIColorExtension.swift"; sourceTree = "<group>"; };
 		EB3F4F0F1B99265A00C5880B /* LineLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LineLayer.swift; path = ../../../Downloads/LineLayer.swift; sourceTree = "<group>"; };
-		EB4258A51B97EC5000AABAB9 /* SparkView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SparkView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB4258A51B97EC5000AABAB9 /* Animation Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animation Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB4258A81B97EC5000AABAB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB4258AA1B97EC5000AABAB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB4258AD1B97EC5000AABAB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -52,7 +52,7 @@
 		EB4258A61B97EC5000AABAB9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EB4258A51B97EC5000AABAB9 /* SparkView.app */,
+				EB4258A51B97EC5000AABAB9 /* Animation Playground.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,9 +76,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EB4258A41B97EC5000AABAB9 /* SparkView */ = {
+		EB4258A41B97EC5000AABAB9 /* Animation Playground */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB4258B71B97EC5000AABAB9 /* Build configuration list for PBXNativeTarget "SparkView" */;
+			buildConfigurationList = EB4258B71B97EC5000AABAB9 /* Build configuration list for PBXNativeTarget "Animation Playground" */;
 			buildPhases = (
 				EB4258A11B97EC5000AABAB9 /* Sources */,
 				EB4258A21B97EC5000AABAB9 /* Frameworks */,
@@ -88,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = SparkView;
+			name = "Animation Playground";
 			productName = SparkView;
-			productReference = EB4258A51B97EC5000AABAB9 /* SparkView.app */;
+			productReference = EB4258A51B97EC5000AABAB9 /* Animation Playground.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EB4258A01B97EC5000AABAB9 /* Build configuration list for PBXProject "SparkView" */;
+			buildConfigurationList = EB4258A01B97EC5000AABAB9 /* Build configuration list for PBXProject "Animation Playground" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -121,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EB4258A41B97EC5000AABAB9 /* SparkView */,
+				EB4258A41B97EC5000AABAB9 /* Animation Playground */,
 			);
 		};
 /* End PBXProject section */
@@ -256,7 +256,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.SparkView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Animation Playground";
 			};
 			name = Debug;
 		};
@@ -269,14 +269,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.SparkView;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Animation Playground";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EB4258A01B97EC5000AABAB9 /* Build configuration list for PBXProject "SparkView" */ = {
+		EB4258A01B97EC5000AABAB9 /* Build configuration list for PBXProject "Animation Playground" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB4258B51B97EC5000AABAB9 /* Debug */,
@@ -285,7 +285,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB4258B71B97EC5000AABAB9 /* Build configuration list for PBXNativeTarget "SparkView" */ = {
+		EB4258B71B97EC5000AABAB9 /* Build configuration list for PBXNativeTarget "Animation Playground" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EB4258B81B97EC5000AABAB9 /* Debug */,
