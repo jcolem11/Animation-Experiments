@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SparkView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +16,88 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5X3-BW-Zqp">
+                                <rect key="frame" x="66" y="525" width="75" height="50"/>
+                                <color key="backgroundColor" red="0.68888300657272339" green="0.71366006135940552" blue="0.73448425531387329" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8Y4-25-evR"/>
+                                    <constraint firstAttribute="width" constant="75" id="bIV-pk-Ndn"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="showAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c1v-UR-YDH"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="color" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JHP-OJ-geF" userLabel="Line Color">
+                                <rect key="frame" x="16" y="409" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="3w6-V6-Dkf"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="number of lines" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vVy-9x-C1V" userLabel="Number of Lines">
+                                <rect key="frame" x="16" y="447" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="87a-3T-6cJ"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="line width" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NeA-6v-s5V" userLabel="Line Width">
+                                <rect key="frame" x="16" y="485" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="18E-5W-mN3"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acR-v3-iAr">
+                                <rect key="frame" x="191.5" y="525" width="75" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="gUS-fc-3YD"/>
+                                    <constraint firstAttribute="height" constant="50" id="pB8-fQ-wJf"/>
+                                </constraints>
+                                <state key="normal" title="Change">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeLayerValues:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PtR-pW-GSK"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JHP-OJ-geF" firstAttribute="leading" secondItem="NeA-6v-s5V" secondAttribute="leading" id="1jK-Ug-GEY"/>
+                            <constraint firstAttribute="centerX" secondItem="vVy-9x-C1V" secondAttribute="centerX" id="BPF-jA-FxD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5X3-BW-Zqp" secondAttribute="bottom" constant="25" id="CDh-3E-tNK"/>
+                            <constraint firstAttribute="centerX" secondItem="JHP-OJ-geF" secondAttribute="centerX" id="Co8-oB-H9z"/>
+                            <constraint firstItem="JHP-OJ-geF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="389" id="RuJ-Lo-TpY"/>
+                            <constraint firstItem="JHP-OJ-geF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RvT-1s-VEt"/>
+                            <constraint firstItem="NeA-6v-s5V" firstAttribute="top" secondItem="vVy-9x-C1V" secondAttribute="bottom" constant="8" symbolic="YES" id="bTg-wS-IwH"/>
+                            <constraint firstItem="5X3-BW-Zqp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="h3f-sl-2aZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="acR-v3-iAr" secondAttribute="bottom" constant="25" id="i8y-ga-TRG"/>
+                            <constraint firstItem="JHP-OJ-geF" firstAttribute="leading" secondItem="vVy-9x-C1V" secondAttribute="leading" id="m4m-TM-euC"/>
+                            <constraint firstItem="acR-v3-iAr" firstAttribute="leading" secondItem="5X3-BW-Zqp" secondAttribute="trailing" constant="50" id="nzE-83-gsq"/>
+                            <constraint firstItem="vVy-9x-C1V" firstAttribute="top" secondItem="JHP-OJ-geF" secondAttribute="bottom" constant="8" symbolic="YES" id="pTp-fX-aJm"/>
+                            <constraint firstItem="5X3-BW-Zqp" firstAttribute="centerX" secondItem="NeA-6v-s5V" secondAttribute="centerX" id="qdJ-Vl-zHj"/>
+                            <constraint firstAttribute="centerX" secondItem="NeA-6v-s5V" secondAttribute="centerX" id="sno-ks-7WG"/>
+                            <constraint firstAttribute="centerX" secondItem="5X3-BW-Zqp" secondAttribute="centerX" id="z1B-Yj-2Dq"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="qdJ-Vl-zHj"/>
+                                <exclude reference="z1B-Yj-2Dq"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="colorField" destination="JHP-OJ-geF" id="PG6-mv-vhs"/>
+                        <outlet property="numberField" destination="vVy-9x-C1V" id="H3b-Ck-atD"/>
+                        <outlet property="widthField" destination="NeA-6v-s5V" id="EpM-vR-tsI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
